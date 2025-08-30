@@ -1,4 +1,4 @@
-# Gem UI - Chat with Gemini
+# gem_ui
 
 A minimalist, modern chat interface for Google's Gemini AI, built with Next.js and shadcn/ui components.
 
@@ -18,16 +18,13 @@ It's both a learning exercise and a practical tool for interacting with Gemini A
 ## Features
 
 - **Clean, Minimalist Interface** - Focus on the conversation without distractions
-- **Sidebar Navigation** - Manage multiple conversations easily with toggle functionality
+- **Sidebar Navigation** - Manage multiple conversations easily
 - **Persistent Storage** - Conversations and settings saved locally
 - **Secure Token Management** - API keys stored securely in browser storage
 - **Real-time Chat** - Smooth messaging experience with loading indicators
 - **Auto-generated Titles** - Conversations automatically titled from first message
 - **Responsive Design** - Works beautifully on desktop and mobile
 - **Keyboard Shortcuts** - Press Enter to send messages
-- **Dark/Light Mode** - Toggle between themes with persistent preference
-- **Conversation Management** - Edit titles inline, delete conversations
-- **Sidebar Toggle** - Hide/show sidebar for more screen space
 
 ## How It Works
 
@@ -63,7 +60,7 @@ The application is built with a modern Next.js architecture:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/reypkn/gem_ui.git
+   git clone https://github.com/yourusername/gem_ui.git
    cd gem_ui
    ```
 
@@ -97,50 +94,25 @@ The application is built with a modern Next.js architecture:
 4. Create a new API key
 5. Copy the key and paste it into the app's settings
 
-## Usage
-
-### Starting a New Chat
-- Click the "New Chat" button in the sidebar
-- Or simply start typing in the message input
-
-### Managing Conversations
-- **Edit Titles**: Click the edit button (pencil icon) next to any conversation
-- **Delete Conversations**: Click the trash icon to remove unwanted chats
-- **Sidebar Toggle**: Use the panel button to hide/show the sidebar
-- **Theme Switch**: Toggle between dark/light modes with the sun/moon button
-
-### Keyboard Shortcuts
-- **Enter**: Send message
-- **Shift+Enter**: New line in message
-- **Escape**: Cancel title editing
-- **Enter**: Save title when editing
-
-### API Configuration
-- Click the settings button (⚙️) to configure your Gemini API token
-- Your token is stored locally in your browser
-- You only need to enter it once
-
 ## Project Structure
 
 ```
 gem_ui/
-├── src/
-│   ├── app/
-│   │   ├── api/chat/
-│   │   │   └── route.ts          # Gemini API integration
-│   │   ├── globals.css           # Global styles and CSS variables
-│   │   ├── layout.tsx            # Root layout component
-│   │   └── page.tsx              # Main chat interface
-│   ├── components/ui/            # shadcn/ui components
-│   │   ├── button.tsx
-│   │   ├── input.tsx
-│   │   ├── card.tsx
-│   │   ├── dialog.tsx
-│   │   ├── label.tsx
-│   │   ├── scroll-area.tsx
-│   │   └── separator.tsx
-│   └── lib/
-│       └── utils.ts              # Utility functions
+├── app/
+│   ├── api/chat/
+│   │   └── route.ts          # Gemini API integration
+│   ├── globals.css           # Global styles and CSS variables
+│   └── page.tsx              # Main chat interface
+├── components/ui/            # shadcn/ui components
+│   ├── button.tsx
+│   ├── input.tsx
+│   ├── card.tsx
+│   ├── dialog.tsx
+│   ├── label.tsx
+│   ├── scroll-area.tsx
+│   └── separator.tsx
+├── lib/
+│   └── utils.ts              # Utility functions
 ├── package.json
 ├── tailwind.config.js
 └── README.md
@@ -154,8 +126,29 @@ gem_ui/
 - **Tailwind CSS** - Utility-first CSS framework
 - **Google Generative AI** - Official Gemini SDK
 - **Lucide React** - Beautiful, consistent icons
-- **Radix UI** - Accessible component primitives
 
-## Environment Variables
+## Usage Tips
 
-No environment variables are required. The application stores the Gemini API token locally in the browser.
+- **Keyboard Navigation**: Press Enter to send messages, Shift+Enter for new lines
+- **Multiple Conversations**: Use the sidebar to switch between different chat topics
+- **Conversation Management**: Click the trash icon to delete unwanted conversations
+- **Auto-save**: Everything is automatically saved to your browser's local storage
+
+## Contributing
+
+This is a personal learning project, but feel free to fork it and make it your own! Some ideas for enhancements:
+
+- Add support for other AI models
+- Implement conversation export/import
+- Add message search functionality
+- Create conversation folders/tags
+- Add dark/light theme toggle
+- Implement conversation sharing
+
+## License
+
+MIT License - feel free to use this code for your own projects and learning.
+
+---
+
+Built with ❤️ using modern web technologies
