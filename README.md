@@ -2,6 +2,10 @@
 
 A minimalist, modern chat interface for Google's Gemini AI, built with Next.js and shadcn/ui components.
 
+## Give it a try
+
+Gem UI is available at [gem-ui.vercel.app](https://gem-ui.vercel.app).
+
 ## Why This Project Exists
 
 This project started as a personal adaptation of a school assignment, reimagined using technologies I'm passionate about. While the original project focused on basic chat functionality, I wanted to explore modern web development practices and create something more polished and user-friendly.
